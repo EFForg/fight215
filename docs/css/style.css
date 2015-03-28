@@ -2,6 +2,20 @@
  * Globals
  */
 
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.woff) format('woff');
+}
+
 /* Links */
 a,
 a:focus,
@@ -28,6 +42,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   color: #fff;
