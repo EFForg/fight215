@@ -42,3 +42,16 @@ $(document).on('ready', function () {
 $('#video-container').click(function(){
   $('#video-container').html('<iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/pF7d8Dmxy8A?rel=0&vq=hd1080&autoplay=1" frameborder="0" allowfullscreen></iframe>');
 });
+
+$(window).on('scroll', function() {
+    console.log($(this).scrollTop());
+    if ($(this).scrollTop() > 150 && !$('.navbar').hasClass('visible')) {
+        $('.navbar').animate({opacity : 1}, 'slow', function() {
+            $(this).addClass('visible').removeAttr('style');
+        });
+    } else if ($(this).scrollTop() <= 150 && $('.navbar').hasClass('visible')) {
+        $('.navbar').animate({opacity : 0}, 'slow', function() {
+            $(this).removeClass('visible').removeAttr('style');
+        });
+    }
+});

@@ -56,8 +56,13 @@ body {
 /*
  * Navbar
  */
+
+ .navbar-inverse.visible {
+  opacity: 1;
+ }
 .navbar-inverse {
   background-color: #000;
+  opacity: 0;
 }
 .nav>li>a {
   text-transform: uppercase;
@@ -88,7 +93,7 @@ body {
  .jumbotron svg {
   width: 100%;
   max-width: 800px;
-  margin-top: 50px;
+  margin-top: 0px;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
