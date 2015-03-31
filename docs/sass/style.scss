@@ -80,9 +80,8 @@ body {
   background: url('/images/circuit-pattern-blue.png') repeat $blue;
 }
 .black-bg {
-  background: url('/images/circuit-pattern-black.png') repeat $blue;
+  background: url('/images/circuit-pattern-black.png') repeat $black;
 }
-
 
 /*
  * Header
@@ -98,18 +97,36 @@ body {
   }
  }
 
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
+ /*
+  * Video section
+  */
+.video-section {
+  padding-top: 30px;
+  p {
+    color: $blue;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.1;
+  }
 }
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+#video-placeholder {
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.8);
 }
-
+#video-placeholder img {
+  margin-top: 30px;
+  cursor: pointer; cursor: hand;
+  width: 100%;
+}
+.btn-lg.btn-blue {
+  background-color: $blue;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25px;
+  box-shadow: 0px 0px 30px rgba(0,0,0,1);
+}
 
 /*
  * Footer
