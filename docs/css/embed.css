@@ -1,0 +1,11 @@
+html, body {
+  background: transparent !important;
+}
+
+#tools .tool {
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: solid 1px #cc0000;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px;
+}
