@@ -54,16 +54,18 @@
         <a href="#call" class="btn btn-lg btn-default btn-blue">Call your rep now</a>
         <div class="row">
           <div class="col-sm-2">
-            <div id="share-buttons">
-              <a data-network="twitter" href="https://twitter.com/intent/tweet?status=My+phone+calls+are+my+business.+Join+me+in+urging+Congress+to+rein+in+NSA+spying.+https%3A%2F%2Fact.eff.org%2Faction%2Ftell-congress-my-phone-calls-are-my-business-reform-the-nsa+via+%40eff&amp;related=eff,efflive" count="995" target="_blank" class="twitter-button social-count" style="display: block;">
-                  <div class="sicon" id="stwit" deluminate_imagetype="png"></div>
-              </a>
-              <a href="https://www.facebook.com/sharer/sharer.php?app_id=97703891945&amp;u=https://act.eff.org/action/tell-congress-my-phone-calls-are-my-business-reform-the-nsa&amp;display=popup" data-network="facebook" count="4305" target="_blank" class="social-count facebook-button" style="display: block;">
-                  <div class="sicon" id="sfb" deluminate_imagetype="png"></div>
-              </a>
-              <a count="503" href="https://plus.google.com/share?url=https://act.eff.org/action/tell-congress-my-phone-calls-are-my-business-reform-the-nsa" data-network="googleplus" target="_blank" class="social-count google-button" style="display: block;">
-                <div class="sicon" id="sgplus" deluminate_imagetype="png"></div>
-              </a>
+            <div id='share-buttons-wrapper' class="hidden-sm">
+              <div id="share-buttons">
+                <a data-network="twitter" href="https://twitter.com/intent/tweet?status=My+phone+calls+are+my+business.+Join+me+in+urging+Congress+to+rein+in+NSA+spying.+https%3A%2F%2Fact.eff.org%2Faction%2Ftell-congress-my-phone-calls-are-my-business-reform-the-nsa+via+%40eff&amp;related=eff,efflive" count="0" target="_blank" class="twitter-button social-count" >
+                    <div class="sicon" id="stwit"></div>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?app_id=97703891945&amp;u=https://act.eff.org/action/tell-congress-my-phone-calls-are-my-business-reform-the-nsa&amp;display=popup" data-network="facebook" count="0" target="_blank" class="social-count facebook-button">
+                    <div class="sicon" id="sfb"></div>
+                </a>
+                <a count="0" href="https://plus.google.com/share?url=https://act.eff.org/action/tell-congress-my-phone-calls-are-my-business-reform-the-nsa" data-network="googleplus" target="_blank" class="social-count google-button">
+                  <div class="sicon" id="sgplus"></div>
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-sm-8">
@@ -81,6 +83,7 @@
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
 
     <div style="height: 0; width: 0" id="anon-stats"></div>
     <script type="text/javascript">

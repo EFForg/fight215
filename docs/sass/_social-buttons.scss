@@ -1,10 +1,12 @@
 #share-buttons {
     height: 100px;
+    width: 100px;
+    margin: 28px auto 0 auto;
 }
 #share-buttons a {
     margin:4px;
     width:54px;
-    height:54px;
+    height:74px;
     z-index: 0;
     margin-top: 40px;
 }
@@ -13,7 +15,7 @@
     width:54px;
     height:54px;
     background-color:black;
-    background-image: image-url("../images/social-icons.png");
+    background-image: url("../images/social-icons.png");
 }
 #share-buttons .sicon {
     margin-top: 2px;
