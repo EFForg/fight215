@@ -65,10 +65,10 @@ body {
  * bg styles
  */
 .blue-bg {
-  background: url("/images/circuit-pattern-blue.png") repeat #007eff; }
+  background: url("../images/circuit-pattern-blue.png") repeat #007eff; }
 
 .black-bg {
-  background: url("/images/circuit-pattern-black.png") repeat #151515; }
+  background: url("../images/circuit-pattern-black.png") repeat #151515; }
 
 /*
  * Header
