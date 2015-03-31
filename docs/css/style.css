@@ -1,7 +1,12 @@
 #share-buttons {
   height: 100px;
   width: 100px;
-  margin: 28px auto 0 auto; }
+  position: absolute;
+  right: 0;
+  top: 30px; }
+  @media (max-width: 830px) {
+    #share-buttons {
+      right: -25px; } }
 
 #share-buttons a {
   margin: 4px;
@@ -150,13 +155,12 @@ body {
  * Navbar
  */
 .navbar-inverse {
-  background-color: #151515; }
+  background-color: #000; }
 
 .nav > li > a {
   text-transform: uppercase; }
 
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
   color: #fff;
   text-transform: uppercase; }
 
@@ -179,7 +183,8 @@ body {
  */
 .jumbotron svg {
   width: 100%;
-  margin-top: 100px;
+  max-width: 800px;
+  margin-top: 50px;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
@@ -206,7 +211,8 @@ body {
  * Video section
  */
 .video-section {
-  padding-top: 30px; }
+  padding-top: 30px;
+  min-height: 600px; }
   .video-section p {
     color: #007eff;
     text-shadow: 0px 0px 30px black;
@@ -214,10 +220,12 @@ body {
     text-align: left;
     line-height: 1.1; }
 
-#video-placeholder {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8); }
+#video-container {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8); }
+  #video-container iframe {
+    max-width: 100%; }
 
-#video-placeholder img {
+#video-container img {
   margin-top: 30px;
   margin-bottom: 40px;
   cursor: pointer;
@@ -248,7 +256,7 @@ body {
     color: #007eff;
     font-size: 22px;
     text-align: left;
-    text-shadow: 0px 4px 8px black; }
+    text-shadow: 0px 0px 20px black; }
   .background-section h1 {
     margin: 40px 0 20px 0; }
 

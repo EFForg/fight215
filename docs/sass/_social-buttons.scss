@@ -1,7 +1,12 @@
 #share-buttons {
-    height: 100px;
-    width: 100px;
-    margin: 28px auto 0 auto;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  @media (max-width: 830px) {
+    right: -25px;
+  }
 }
 #share-buttons a {
     margin:4px;
