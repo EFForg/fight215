@@ -218,8 +218,7 @@ body {
  * Video section
  */
 .video-section {
-  padding-top: 30px;
-  min-height: 600px; }
+  padding: 30px 0; }
   .video-section p {
     color: #007eff;
     text-shadow: 0px 0px 30px black;
