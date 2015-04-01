@@ -159,7 +159,7 @@ body {
 
 .navbar-inverse {
   background-color: #000;
-  opacity: 0; }
+  display: none; }
 
 .nav > li > a {
   text-transform: uppercase; }
