@@ -44,7 +44,6 @@ $('#video-container').click(function(){
 });
 
 $(window).on('scroll', function() {
-    console.log($(this).scrollTop());
     if ($(this).scrollTop() > 150 && !$('.navbar').hasClass('visible')) {
         $('.navbar').animate({opacity : 1}, 'slow', function() {
             $(this).addClass('visible').removeAttr('style');
