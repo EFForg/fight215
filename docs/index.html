@@ -89,22 +89,38 @@
 
     <div class="calltool-section blue-bg">
       <div class="container">
-        <h1>Call tool goes here.</h1>
-          <!--<script type="text/javascript">
-              var ac_embed = {};
-              ac_embed.css = "https://localhost:8080/css/embed.css";
-              ac_embed.width = 'auto';
-          </script>
-          <script type="text/javascript" src="https://act.eff.org/action/embed"></script>
-          <iframe src="iframe-sample.html?css=https%3A%2F%2Flocalhost%3A8080%2Fcss%2Fembed.css" frameborder="0" width="500" height="567px"></iframe>
-        </div>-->
-        <script type="text/javascript">
-            var ac_embed = {};
-            ac_embed.css = "https://localhost:8080/css/embed.css";
-            ac_embed.width = 500;
-        </script>
-        <script type="text/javascript" src="https://act.eff.org/action/embed"></script>
-        <a id="action-center-widget" href="http://act.eff.org/action/shut-the-nsa-s-backdoor-to-the-internet">Take part in the action!</a>
+        <h1>Call Your Representatives Now!</h1>
+        
+        <div class="row">
+          <div id="call-script" class="col-sm-6 col-md-4 col-md-offset-2">
+            <h5>What to say</h5>
+            <p>Hi, I'm one of Representative/Senator _______'s constituents, and I'm calling  to oppose Fast Track for the Trans-Pacific Partnership agreement. Congress needs time to debate and amend trade agreements that affect all of us. Fast Tracking the TPP is undemocratic, and I expect my lawmakers to oppose it. I'll be watching this issue closely in 2014.</p>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div id="tf-call-widget-form">
+              <h5>Enter your information</h5>
+              <form method="get" action="https://call-tool.eff.org/create" id="tf-call-tool" role="form">
+                <div class="form-group">
+                  <label for="tf-zip-code" id="tf-zip-code-label">Zip Code</label>
+                  <input class="form-control input-lg" type="text" id="tf-zip-code" placeholder="10001">
+                </div>
+                <div class="form-group">
+                  <label for="tf-phone-number" id="tf-phone-number-label">Phone Number</label>
+                  <input class="form-control input-lg" type="text" id="tf-phone-number" placeholder="415-333-3333">
+                </div>
+                <div class="text-center">
+                  <input id="tf-submit" class="btn btn-lg btn-black" type="Submit" data-waiting-text="Calling Now" value="Call Now">
+                </div>
+              </form>
+            </div>
+            <div id="tf-call-widget-success" style="display: none;">
+                <p><strong>You can press * at any time to hang up and call the next representative.</strong></p>
+                <p id="tf-reset">Call didn't come through? Try again.</p>
+            </div>
+            <span id="tf-error-text"></span>
+          </div>
+        </div>
+
       <a name="background"></a>
       </div>
     </div>
@@ -133,10 +149,18 @@
         Footer links go here
       </div>
     </div>
+    >
 
+    <script>
+      // TODO: Update campaign name
+      var tforce_config = {
+        campaign: 'stop-fast-track'
+      };
+    </script>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script
+    <script type="text/javascript" src="js/call-widget.js"></script>
 
     <div style="height: 0; width: 0" id="anon-stats"></div>
     <script type="text/javascript">
