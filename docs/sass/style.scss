@@ -140,9 +140,12 @@ body {
 }
 #video-container img {
   margin-top: 30px;
-  margin-bottom:40px;
+  margin-bottom:5px;
   cursor: pointer; cursor: hand;
   width: 100%;
+}
+#video-privacy {
+  margin-bottom:30px;
 }
 .btn-lg.btn-blue {
   background-color: $blue;

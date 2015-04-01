@@ -116,11 +116,13 @@
   font-style: normal;
   font-weight: 400;
   src: local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.woff) format("woff"); }
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   src: local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.woff) format("woff"); }
+
 /* Links */
 a,
 a:focus,
@@ -206,6 +208,7 @@ body {
   100% {
     opacity: 1;
     transform: none; } }
+
 .jumbotron {
   margin-bottom: 0; }
   .jumbotron a {
@@ -231,10 +234,13 @@ body {
 
 #video-container img {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   cursor: pointer;
   cursor: hand;
   width: 100%; }
+
+#video-privacy {
+  margin-bottom: 30px; }
 
 .btn-lg.btn-blue {
   background-color: #007eff;

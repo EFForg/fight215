@@ -19,7 +19,7 @@ $(function(){
     var shareUrl = window.location.href;
     // If the share buttons widget is visible, lets load some values
     if($('#share-buttons').length > 0) {
-        $.ajax('https://socialbuttonsserver.herokuapp.com/?url=' + shareUrl, {
+        $.ajax('https://act.eff.org/tools/social_buttons_count?url=' + shareUrl, {
             success: function(res, err) {
                 $.each(res, function(network, value) {
                     var count = value;
