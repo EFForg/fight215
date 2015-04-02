@@ -285,6 +285,8 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+
+
 }
 
 @media (min-width: 992px) {
@@ -292,5 +294,15 @@ body {
   .mastfoot,
   .cover-container {
     width: 700px;
+  }
+
+  .jumbotron .container h2 { // force a line break
+    padding: 0 100px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .jumbotron .container h2 {
+    padding: 0;
   }
 }
