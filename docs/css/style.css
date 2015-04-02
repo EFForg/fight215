@@ -116,13 +116,11 @@
   font-style: normal;
   font-weight: 400;
   src: local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.woff) format("woff"); }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   src: local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.woff) format("woff"); }
-
 /* Links */
 a,
 a:focus,
@@ -182,7 +180,7 @@ body {
   background: url("../images/circuit-pattern-blue.png") repeat #007eff; }
 
 .black-bg {
-  background: url("../images/circuit-pattern-black.png") repeat black; }
+  background: url("../images/circuit-pattern-black.png") repeat #000; }
 
 /*
  * Header
@@ -204,11 +202,9 @@ body {
   0% {
     opacity: 0;
     transform: translate3d(0, 30%, 0); }
-
   100% {
     opacity: 1;
     transform: none; } }
-
 .jumbotron {
   margin-bottom: 0; }
   .jumbotron a {
@@ -304,7 +300,7 @@ body {
   position: relative; }
   .background-section::before {
     content: "";
-    background: url("../images/circuit-pattern-black.png") repeat black;
+    background: url("../images/circuit-pattern-black.png") repeat #000;
     opacity: 0.5;
     top: 0;
     left: 0;
@@ -368,4 +364,12 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px; } }
+    width: 700px; }
+
+  .jumbotron .container h2 {
+    padding: 0 100px; } }
+@media (min-width: 1200px) {
+  .jumbotron .container h2 {
+    padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */
