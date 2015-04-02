@@ -86,7 +86,9 @@ body {
 .black-bg {
   background: url('../images/circuit-pattern-black.png') repeat #000;
 }
-
+.white-bg {
+  background: url('../images/circuit-pattern-sm3.png') repeat #fff;
+}
 /*
  * Header
  */
@@ -214,10 +216,12 @@ body {
   padding-bottom:50px;
   background: transparent;
   position: relative;
+  //background: #fff;
   &::before {
     content: "";
-    background: url('../images/circuit-pattern-black.png') repeat #000;
-    opacity: 0.5;
+    //background: url('../images/circuit-pattern-black.png') repeat #000;
+    background: url('../images/circuit-pattern-sm3.png') repeat #fff;
+    opacity: 0.15;
     top: 0;
     left: 0;
     bottom: 0;
@@ -227,7 +231,7 @@ body {
   }
   &::after {
     content: "";
-    background: #000;
+    background: #fff;
     opacity: 1;
     top: 0;
     left: 0;
@@ -236,13 +240,21 @@ body {
     position: absolute;
     z-index: -2;   
   }
-  p {
-    color: #fff;
+  p:first-of-type {
     font-size: 22px;
+    margin-top: 40px;
+  }
+  p {
+    //color: #fff;
+    color: #000;
+    font-style: normal;
+    font-size: 14px;
     text-align: left;
-    text-shadow: 0px 0px 20px black;
+    //text-shadow: 0px 0px 20px black;
+    text-shadow: none;
     opacity: 1;
     margin-bottom:20px;
+    font-weight: 200;
   }
   h1 {
     color: $blue;
