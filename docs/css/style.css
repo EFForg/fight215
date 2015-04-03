@@ -253,7 +253,14 @@ body {
  * Call section
  */
 .calltool-section {
-  padding: 20px 0 50px 0; }
+  padding: 60px 0 80px 0; }
+  .calltool-section h1, .calltool-section h2 {
+    padding: 0;
+    margin: 0; }
+  .calltool-section h1 {
+    text-transform: uppercase; }
+  .calltool-section h2 {
+    margin-bottom: 1em; }
 
 #call-script {
   background-color: #fff;
@@ -276,12 +283,14 @@ body {
   text-align: left;
   padding-left: 10px; }
   #tf-call-widget-form h5 {
-    text-transform: uppercase;
-    font-size: 23.5px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px; }
   #tf-call-widget-form label {
     font-size: 16px; }
+  #tf-call-widget-form div:last-of-type {
+    text-align: center;
+    font-size: 0.9em; }
 
 .btn-lg.btn-black {
   background-color: #000;
@@ -323,6 +332,7 @@ body {
     z-index: -2; }
   .background-section p:first-of-type {
     font-size: 22px;
+    line-height: 27px;
     margin-top: 60px; }
   .background-section p {
     color: #000;
@@ -338,9 +348,10 @@ body {
     margin: 40px 0 20px 0; }
 
 .quote-section {
+  text-shadow: none;
   padding-bottom: 40px; }
   .quote-section div div div {
-    margin-bottom: 2em; }
+    margin-bottom: 3em; }
     .quote-section div div div:first-of-type {
       margin-top: 60px; }
     .quote-section div div div a {
@@ -361,7 +372,7 @@ body {
     margin: 0 2em; }
     @media (min-width: 768px) {
       .footer img {
-        margin: 0 6em; } }
+        margin: 0 4em; } }
   .footer a {
     color: #007eff; }
   .footer a:hover {

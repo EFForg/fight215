@@ -1,6 +1,8 @@
 $black: #151515;
 $blue: #007eff;
 
+
+//$blue: rgba(0,126,255,1);
 $footer-color: #001830;
 
 $medium: 768px;
@@ -168,7 +170,18 @@ body {
  */
 
 .calltool-section  {
-  padding: 20px 0 50px 0;
+  padding: 60px 0 80px 0;
+
+  h1, h2 {
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-bottom: 1em;
+  }
 }
 #call-script {
   background-color: #fff;
@@ -193,13 +206,17 @@ body {
   text-align:left;
   padding-left: 10px;
   h5 {
-    text-transform: uppercase;
-    font-size: 23.5px;
+    //text-transform: uppercase;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
   label {
     font-size: 16px;
+  }
+  div:last-of-type {
+    text-align: center;
+    font-size: 0.9em;
   }
 }
 .btn-lg.btn-black {
@@ -247,6 +264,7 @@ body {
   }
   p:first-of-type {
     font-size: 22px;
+    line-height: 27px;
     margin-top: 60px;
   }
   p {
@@ -272,10 +290,10 @@ body {
 
 .quote-section {
 
-
+  text-shadow: none;
   padding-bottom: 40px;
   div div div { // quotes
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     &:first-of-type {
       margin-top: 60px;
     }
@@ -309,7 +327,7 @@ body {
     margin: 0 2em;
 
     @include breakpoint($medium) {
-      margin: 0 6em;
+      margin: 0 4em;
     }
 
 
