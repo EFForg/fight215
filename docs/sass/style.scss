@@ -214,10 +214,18 @@ body {
   label {
     font-size: 16px;
   }
-  div:last-of-type {
+  .privacy-info {
     text-align: center;
     font-size: 0.9em;
   }
+  h6 {
+    font-size: 1.4em;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
 }
 .btn-lg.btn-black {
   background-color: #000;
@@ -235,6 +243,7 @@ body {
  * Background section
  */
 .background-section {
+  padding-top: 30px;
   padding-bottom:50px;
   background: transparent;
   position: relative;
@@ -262,11 +271,11 @@ body {
     position: absolute;
     z-index: -2;   
   }
-  p:first-of-type {
-    font-size: 22px;
-    line-height: 27px;
-    margin-top: 60px;
-  }
+  // p:first-of-type {
+  //   font-size: 22px;
+  //   line-height: 27px;
+  //   margin-top: 60px;
+  // }
   p {
     //color: #fff;
     color: #000;
@@ -279,11 +288,32 @@ body {
     margin-bottom:20px;
     font-weight: 200;
   }
-  h1 {
-    color: $blue;
+  // h1 {
+  //   color: $blue;
+  //   margin: 40px 0 20px 0;
+  // }
+  h1, h2 {
+    color: $black;
     margin: 40px 0 20px 0;
+    text-shadow: none;
+
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.6em;
   }
 }
+
+.background-section .blue-bg {
+
+  background: transparent;
+  &::before {
+    background: url('../images/circuit-pattern-blue.png') repeat $blue;
+    opacity: 0.5 !important;
+  }
+}
+  
 
 
 // QUOTES

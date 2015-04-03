@@ -288,9 +288,13 @@ body {
     margin-bottom: 20px; }
   #tf-call-widget-form label {
     font-size: 16px; }
-  #tf-call-widget-form div:last-of-type {
+  #tf-call-widget-form .privacy-info {
     text-align: center;
     font-size: 0.9em; }
+  #tf-call-widget-form h6 {
+    font-size: 1.4em; }
+    #tf-call-widget-form h6 a {
+      text-decoration: underline; }
 
 .btn-lg.btn-black {
   background-color: #000;
@@ -307,6 +311,7 @@ body {
  * Background section
  */
 .background-section {
+  padding-top: 30px;
   padding-bottom: 50px;
   background: transparent;
   position: relative; }
@@ -330,10 +335,6 @@ body {
     right: 0;
     position: absolute;
     z-index: -2; }
-  .background-section p:first-of-type {
-    font-size: 22px;
-    line-height: 27px;
-    margin-top: 60px; }
   .background-section p {
     color: #000;
     font-style: normal;
@@ -343,9 +344,20 @@ body {
     opacity: 1;
     margin-bottom: 20px;
     font-weight: 200; }
-  .background-section h1 {
-    color: #007eff;
-    margin: 40px 0 20px 0; }
+  .background-section h1, .background-section h2 {
+    color: #151515;
+    margin: 40px 0 20px 0;
+    text-shadow: none; }
+  .background-section h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.6em; }
+
+.background-section .blue-bg {
+  background: transparent; }
+  .background-section .blue-bg::before {
+    background: url("../images/circuit-pattern-blue.png") repeat #007eff;
+    opacity: 0.5 !important; }
 
 .quote-section {
   text-shadow: none;
