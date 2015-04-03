@@ -8,3 +8,8 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+
+# Custom #
+######################
+*.sass-cache*
