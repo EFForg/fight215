@@ -247,7 +247,7 @@ body {
   }
   p:first-of-type {
     font-size: 22px;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   p {
     //color: #fff;
@@ -266,6 +266,32 @@ body {
     margin: 40px 0 20px 0;
   }
 }
+
+
+// QUOTES
+
+.quote-section {
+
+
+  padding-bottom: 40px;
+  div div div { // quotes
+    margin-bottom: 2em;
+    &:first-of-type {
+      margin-top: 60px;
+    }
+    a {
+      text-transform: uppercase
+    }
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+}
+
+
+
 
 /*
  * Footer

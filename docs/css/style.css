@@ -323,7 +323,7 @@ body {
     z-index: -2; }
   .background-section p:first-of-type {
     font-size: 22px;
-    margin-top: 40px; }
+    margin-top: 60px; }
   .background-section p {
     color: #000;
     font-style: normal;
@@ -336,6 +336,17 @@ body {
   .background-section h1 {
     color: #007eff;
     margin: 40px 0 20px 0; }
+
+.quote-section {
+  padding-bottom: 40px; }
+  .quote-section div div div {
+    margin-bottom: 2em; }
+    .quote-section div div div:first-of-type {
+      margin-top: 60px; }
+    .quote-section div div div a {
+      text-transform: uppercase; }
+  .quote-section p {
+    font-size: 18px; }
 
 /*
  * Footer
