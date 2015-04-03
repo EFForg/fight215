@@ -180,7 +180,10 @@ body {
   background: url("../images/circuit-pattern-blue.png") repeat #007eff; }
 
 .black-bg {
-  background: url("../images/circuit-pattern-black.png") repeat black; }
+  background: url("../images/circuit-pattern-black.png") repeat #000; }
+
+.white-bg {
+  background: url("../images/circuit-pattern-sm3.png") repeat #fff; }
 
 /*
  * Header
@@ -202,7 +205,6 @@ body {
   0% {
     opacity: 0;
     transform: translate3d(0, 30%, 0); }
-
   100% {
     opacity: 1;
     transform: none; } }
@@ -215,8 +217,7 @@ body {
  * Video section
  */
 .video-section {
-  padding-top: 30px;
-  min-height: 600px; }
+  padding: 30px 0; }
   .video-section p {
     color: #007eff;
     text-shadow: 0px 0px 30px black;
@@ -231,10 +232,13 @@ body {
 
 #video-container img {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   cursor: pointer;
   cursor: hand;
   width: 100%; }
+
+#video-privacy {
+  margin-bottom: 30px; }
 
 .btn-lg.btn-blue {
   background-color: #007eff;
@@ -249,7 +253,14 @@ body {
  * Call section
  */
 .calltool-section {
-  padding: 20px 0 50px 0; }
+  padding: 60px 0 80px 0; }
+  .calltool-section h1, .calltool-section h2 {
+    padding: 0;
+    margin: 0; }
+  .calltool-section h1 {
+    text-transform: uppercase; }
+  .calltool-section h2 {
+    margin-bottom: 1em; }
 
 #call-script {
   background-color: #fff;
@@ -272,23 +283,25 @@ body {
   text-align: left;
   padding-left: 10px; }
   #tf-call-widget-form h5 {
-    text-transform: uppercase;
-    font-size: 23.5px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px; }
   #tf-call-widget-form label {
     font-size: 16px; }
+  #tf-call-widget-form div:last-of-type {
+    text-align: center;
+    font-size: 0.9em; }
 
 .btn-lg.btn-black {
   background-color: #000;
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 5px 20px;
-  border: 4px solid #000; }
+  padding: 9px 24px;
+  border: 1px solid #000; }
   .btn-lg.btn-black:hover {
     color: #fff;
-    border: 4px solid #fff; }
+    border: 1px solid #fff; }
 
 /*
  * Background section
@@ -299,8 +312,8 @@ body {
   position: relative; }
   .background-section::before {
     content: "";
-    background: url("../images/circuit-pattern-black.png") repeat black;
-    opacity: 0.5;
+    background: url("../images/circuit-pattern-sm3.png") repeat #fff;
+    opacity: 0.15;
     top: 0;
     left: 0;
     bottom: 0;
@@ -309,7 +322,7 @@ body {
     z-index: -1; }
   .background-section::after {
     content: "";
-    background: #000;
+    background: #fff;
     opacity: 1;
     top: 0;
     left: 0;
@@ -317,24 +330,54 @@ body {
     right: 0;
     position: absolute;
     z-index: -2; }
-  .background-section p {
-    color: #fff;
+  .background-section p:first-of-type {
     font-size: 22px;
+    line-height: 27px;
+    margin-top: 60px; }
+  .background-section p {
+    color: #000;
+    font-style: normal;
+    font-size: 14px;
     text-align: left;
-    text-shadow: 0px 0px 20px black;
+    text-shadow: none;
     opacity: 1;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-weight: 200; }
   .background-section h1 {
     color: #007eff;
     margin: 40px 0 20px 0; }
+
+.quote-section {
+  text-shadow: none;
+  padding-bottom: 40px; }
+  .quote-section div div div {
+    margin-bottom: 3em; }
+    .quote-section div div div:first-of-type {
+      margin-top: 60px; }
+    .quote-section div div div a {
+      text-transform: uppercase; }
+  .quote-section p {
+    font-size: 18px; }
 
 /*
  * Footer
  */
 .footer {
-  background-color: #151515;
+  background-color: #001830;
   padding: 20px 0;
-  text-align: left; }
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.8em; }
+  .footer img {
+    margin: 0 2em; }
+    @media (min-width: 768px) {
+      .footer img {
+        margin: 0 4em; } }
+  .footer a {
+    color: #007eff; }
+  .footer a:hover {
+    text-decoration: none;
+    color: #fff; }
 
 /*
  * Affix and center
@@ -363,4 +406,12 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px; } }
+    width: 700px; }
+
+  .jumbotron .container h2 {
+    padding: 0 100px; } }
+@media (min-width: 1200px) {
+  .jumbotron .container h2 {
+    padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */
