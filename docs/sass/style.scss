@@ -1,8 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+
 $black: #151515;
 $blue: #007eff;
+$white: #fcfcfc;
 
-
-//$blue: rgba(0,126,255,1);
+$trans-blue: rgba(0,126,255,0.3);
 $footer-color: #001830;
 
 $medium: 768px;
@@ -11,7 +14,7 @@ $medium: 768px;
 @import 'breakpoint';
 
 /*
- * Globals
+ G* lobals
  */
 
 /* Montserrat */
@@ -52,12 +55,12 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  //text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /*
@@ -96,6 +99,31 @@ body {
 .white-bg {
   background: url('../images/circuit-pattern-sm3.png') repeat #fff;
 }
+
+
+// button
+
+
+%button {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Lato';
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 1em 4em 0.9em 4em;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin-top: 2em;
+  background-color: transparent;
+  outline: 0;
+  &:hover {
+    background-color: rgba(255,255,255,1);
+    color: $black;
+  }
+}
+
+
 /*
  * Header
  */
@@ -127,7 +155,23 @@ body {
   a {
     text-decoration: underline;
   }
+
+  @include breakpoint($medium) {
+    height: 400px;
+  }
+
+  h2 {
+    font-weight: 200;
+    letter-spacing: 0.01em;
+  }
+
+
+  .cta {
+    @extend %button;
+  }
+
  }
+
 
  /*
   * Video section
@@ -136,14 +180,14 @@ body {
   padding: 30px 0;
   p {
     color: $blue;
-    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+    //text-shadow: 0px 0px 30px rgba(0,0,0,1);
     font-size: 20px;
     text-align: left;
     line-height: 1.1;
   }
 }
 #video-container {
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+  //box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
   iframe {max-width: 100%;}
 }
 #video-container img {
@@ -177,10 +221,21 @@ body {
     margin: 0;
   }
   h1 {
+    font-family: 'Lato';
+    font-weight: 700;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
   }
   h2 {
     margin-bottom: 1em;
+    font-weight: 300;
+  }
+
+  .connect {
+    color: $white;
+    @extend %button;
+    margin-top: 0.5em;
+
   }
 }
 #call-script {
@@ -188,89 +243,135 @@ body {
   text-shadow: none;
   color: $black;
   font-size: 18px;
-  padding: 20px;
+  padding: 1em 2em 2em 2em;
+  font-weight: 300;
   text-align: left;
-  box-shadow: 0px 0px 50px rgba(0,0,0,0.7);
+  //box-shadow: 0px 0px 50px rgba(0,0,0,0.7);
   margin-top:20px;
+  box-sizing: border-box;
 
   h5 {
     text-align: left;
     color: $blue;
     text-transform: uppercase;
     font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-top: 0.5em;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: 0.05em;
   }
 }
 #tf-call-widget-form {
-  text-align:left;
+  text-align:center;
   padding-left: 10px;
   h5 {
     //text-transform: uppercase;
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 2.5em;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: normal;
   }
   label {
     font-size: 16px;
   }
   .privacy-info {
     text-align: center;
+    font-weight: 300;
     font-size: 0.9em;
+    margin-top: -1.2em;
   }
   h6 {
+    margin-top: 1em;
     font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-style: italic;
 
-    a {
+    a:hover {
       text-decoration: underline;
     }
+
   }
 
-}
-.btn-lg.btn-black {
-  background-color: #000;
-  border-radius: 0;
-  font-size: 25px;
-  text-transform: uppercase;
-  padding: 9px 24px;
-    border: 1px solid #000;
-  &:hover {
+  .input-lg {
+    margin: 0 auto;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 24px;
+    background: transparent;
     color: #fff;
-    border: 1px solid #fff;
+    outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding-left: 0.5em;
+    width: 80%;
+    //text-align: center;
+    &:focus {
+      outline: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
   }
+  ::-webkit-input-placeholder { color:#fff; }
+  ::-moz-placeholder { color:#fff; }
+  :-ms-input-placeholder { color:#fff; }
+  input:-moz-placeholder { color:#fff; }
+
 }
+// .btn-lg.btn-black {
+//   background-color: #000;
+//   border-radius: 0;
+//   font-size: 25px;
+//   text-transform: uppercase;
+//   padding: 9px 24px;
+//     border: 1px solid #000;
+//   &:hover {
+//     color: #fff;
+//     border: 1px solid #fff;
+//   }
+// }
 /*
  * Background section
  */
 .background-section {
   padding-top: 30px;
   padding-bottom:50px;
-  background: transparent;
+  background: $white;
   position: relative;
   //background: #fff;
-  &::before {
-    content: "";
-    //background: url('../images/circuit-pattern-black.png') repeat #000;
-    background: url('../images/circuit-pattern-sm3.png') repeat #fff;
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
-  &::after {
-    content: "";
-    background: #fff;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -2;   
-  }
+  // &::before {
+  //   content: "";
+  //   //background: url('../images/circuit-pattern-black.png') repeat #000;
+  //   background: url('../images/circuit-pattern-sm3.png') repeat #fff;
+  //   opacity: 0.15;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   position: absolute;
+  //   z-index: -1;   
+  // }
+  // &::after {
+  //   content: "";
+  //   background: #fff;
+  //   opacity: 1;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   position: absolute;
+  //   z-index: -2;   
+  // }
   // p:first-of-type {
   //   font-size: 22px;
   //   line-height: 27px;
@@ -281,12 +382,16 @@ body {
     color: #000;
     font-style: normal;
     font-size: 14px;
+
+    @include breakpoint($medium) {
+      font-size: 1.2em;
+    }
     text-align: left;
     //text-shadow: 0px 0px 20px black;
     text-shadow: none;
     opacity: 1;
     margin-bottom:20px;
-    font-weight: 200;
+    font-weight: 300;
   }
   // h1 {
   //   color: $blue;
@@ -298,6 +403,10 @@ body {
     text-shadow: none;
 
   }
+  h1 {
+    font-size: 2em;
+    text-align: left;
+  }
   h2 {
     margin-top: 0;
     margin-bottom: 30px;
@@ -305,14 +414,14 @@ body {
   }
 }
 
-.background-section .blue-bg {
+// .background-section .blue-bg {
 
-  background: transparent;
-  &::before {
-    background: url('../images/circuit-pattern-blue.png') repeat $blue;
-    opacity: 0.5 !important;
-  }
-}
+//   background: transparent;
+//   &::before {
+//     background: url('../images/circuit-pattern-blue.png') repeat $blue;
+//     opacity: 0.5 !important;
+//   }
+// }
   
 
 
@@ -328,12 +437,17 @@ body {
       margin-top: 60px;
     }
     a {
-      text-transform: uppercase
+      @include breakpoint($medium) {
+        padding-left: 5em;
+      }
+      text-transform: uppercase;
+      font-weight: 400;
     }
   }
 
   p {
     font-size: 18px;
+    font-weight: 300;
   }
 
 }

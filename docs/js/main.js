@@ -49,4 +49,11 @@ $(function(){
             return false;
         });
     }
+
+    $('.cta').click(function() {
+        window.location.href='#call';
+        return false;
+    });
+    $('#tf-phone-number').focus();
+
 });

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 #share-buttons {
   height: 100px;
   width: 100px;
@@ -108,7 +109,7 @@
   position: absolute; }
 
 /*
- * Globals
+ G* lobals
  */
 /* Montserrat */
 @font-face {
@@ -144,12 +145,11 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 body {
   color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+  text-align: center; }
 
 /*
  * Navbar
@@ -180,10 +180,27 @@ body {
   background: #007eff; }
 
 .black-bg {
-  background: url("../images/circuit-pattern-black.png") repeat black; }
+  background: url("../images/circuit-pattern-black.png") repeat #000; }
 
 .white-bg {
-  background: url("../images/circuit-pattern-sm3.png") repeat white; }
+  background: url("../images/circuit-pattern-sm3.png") repeat #fff; }
+
+.jumbotron .cta, .calltool-section .connect {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Lato';
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 1em 4em 0.9em 4em;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin-top: 2em;
+  background-color: transparent;
+  outline: 0; }
+  .jumbotron .cta:hover, .calltool-section .connect:hover {
+    background-color: white;
+    color: #151515; }
 
 /*
  * Header
@@ -205,7 +222,6 @@ body {
   0% {
     opacity: 0;
     transform: translate3d(0, 30%, 0); }
-
   100% {
     opacity: 1;
     transform: none; } }
@@ -213,6 +229,12 @@ body {
   margin-bottom: 0; }
   .jumbotron a {
     text-decoration: underline; }
+  @media (min-width: 768px) {
+    .jumbotron {
+      height: 400px; } }
+  .jumbotron h2 {
+    font-weight: 200;
+    letter-spacing: 0.01em; }
 
 /*
  * Video section
@@ -221,15 +243,12 @@ body {
   padding: 30px 0; }
   .video-section p {
     color: #007eff;
-    text-shadow: 0px 0px 30px black;
     font-size: 20px;
     text-align: left;
     line-height: 1.1; }
 
-#video-container {
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8); }
-  #video-container iframe {
-    max-width: 100%; }
+#video-container iframe {
+  max-width: 100%; }
 
 #video-container img {
   margin-top: 30px;
@@ -259,54 +278,93 @@ body {
     padding: 0;
     margin: 0; }
   .calltool-section h1 {
+    font-family: 'Lato';
+    font-weight: 700;
+    letter-spacing: 0.1em;
     text-transform: uppercase; }
   .calltool-section h2 {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-weight: 300; }
+  .calltool-section .connect {
+    color: #fcfcfc;
+    margin-top: 0.5em; }
 
 #call-script {
   background-color: #fff;
   text-shadow: none;
   color: #151515;
   font-size: 18px;
-  padding: 20px;
+  padding: 1em 2em 2em 2em;
+  font-weight: 300;
   text-align: left;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
-  margin-top: 20px; }
+  margin-top: 20px;
+  box-sizing: border-box; }
   #call-script h5 {
     text-align: left;
     color: #007eff;
     text-transform: uppercase;
     font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 10px; }
+    margin-top: 0.5em;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: 0.05em; }
 
 #tf-call-widget-form {
-  text-align: left;
+  text-align: center;
   padding-left: 10px; }
   #tf-call-widget-form h5 {
     font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 2.5em;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: normal; }
   #tf-call-widget-form label {
     font-size: 16px; }
   #tf-call-widget-form .privacy-info {
     text-align: center;
-    font-size: 0.9em; }
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-top: -1.2em; }
   #tf-call-widget-form h6 {
-    font-size: 1.4em; }
-    #tf-call-widget-form h6 a {
+    margin-top: 1em;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-style: italic; }
+    #tf-call-widget-form h6 a:hover {
       text-decoration: underline; }
-
-.btn-lg.btn-black {
-  background-color: #000;
-  border-radius: 0;
-  font-size: 25px;
-  text-transform: uppercase;
-  padding: 9px 24px;
-  border: 1px solid #000; }
-  .btn-lg.btn-black:hover {
+  #tf-call-widget-form .input-lg {
+    margin: 0 auto;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 24px;
+    background: transparent;
     color: #fff;
-    border: 1px solid #fff; }
+    outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding-left: 0.5em;
+    width: 80%; }
+    #tf-call-widget-form .input-lg:focus {
+      outline: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+  #tf-call-widget-form ::-webkit-input-placeholder {
+    color: #fff; }
+  #tf-call-widget-form ::-moz-placeholder {
+    color: #fff; }
+  #tf-call-widget-form :-ms-input-placeholder {
+    color: #fff; }
+  #tf-call-widget-form input:-moz-placeholder {
+    color: #fff; }
 
 /*
  * Background section
@@ -314,28 +372,8 @@ body {
 .background-section {
   padding-top: 30px;
   padding-bottom: 50px;
-  background: transparent;
+  background: #fcfcfc;
   position: relative; }
-  .background-section::before {
-    content: "";
-    background: url("../images/circuit-pattern-sm3.png") repeat white;
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; }
-  .background-section::after {
-    content: "";
-    background: #fff;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -2; }
   .background-section p {
     color: #000;
     font-style: normal;
@@ -344,21 +382,21 @@ body {
     text-shadow: none;
     opacity: 1;
     margin-bottom: 20px;
-    font-weight: 200; }
+    font-weight: 300; }
+    @media (min-width: 768px) {
+      .background-section p {
+        font-size: 1.2em; } }
   .background-section h1, .background-section h2 {
     color: #151515;
     margin: 40px 0 20px 0;
     text-shadow: none; }
+  .background-section h1 {
+    font-size: 2em;
+    text-align: left; }
   .background-section h2 {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 1.6em; }
-
-.background-section .blue-bg {
-  background: transparent; }
-  .background-section .blue-bg::before {
-    background: url("../images/circuit-pattern-blue.png") repeat #007eff;
-    opacity: 0.5 !important; }
 
 .quote-section {
   text-shadow: none;
@@ -368,9 +406,14 @@ body {
     .quote-section div div div:first-of-type {
       margin-top: 60px; }
     .quote-section div div div a {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 400; }
+      @media (min-width: 768px) {
+        .quote-section div div div a {
+          padding-left: 5em; } }
   .quote-section p {
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: 300; }
 
 /*
  * Footer
@@ -426,3 +469,5 @@ body {
 @media (min-width: 1200px) {
   .jumbotron .container h2 {
     padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */
