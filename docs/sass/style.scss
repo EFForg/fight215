@@ -9,6 +9,7 @@ $trans-blue: rgba(0,126,255,0.3);
 $footer-color: #001830;
 
 $medium: 768px;
+$small: max-width 767px;
 
 @import 'social-buttons';
 @import 'breakpoint';
@@ -311,7 +312,7 @@ body {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    padding-left: 0.5em;
+    padding-left: 2.2em;
     width: 80%;
     //text-align: center;
     &:focus {

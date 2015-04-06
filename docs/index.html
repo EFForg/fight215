@@ -128,10 +128,9 @@
               <form method="get" action="https://call-tool.eff.org/create" id="tf-call-tool" role="form">
                 <div class="form-group">
                   <!-- <label for="tf-phone-number" id="tf-phone-number-label">Phone Number</label> -->
-                  <input class="form-control input-lg" type="text" id="tf-phone-number" placeholder="415-333-3333">
+                  <input class="form-control input-lg" type="text" id="tf-phone-number" placeholder="(415) 333-3333">
                 </div>
                 <div class="text-center">
-    <!--               <input id="tf-submit" class="btn btn-lg btn-black" type="Submit" data-waiting-text="Calling Now" value="Connect Me"> -->
                   <input id="tf-submit" class="connect" type="Submit" data-waiting-text="Calling Now" value="Connect Me">
                 </div>
                 <div class="privacy-info"><br />We use Twilio to call and connect you (<a href="https://www.twilio.com/legal/privacy">Privacy Policy</a>).</div>
@@ -213,6 +212,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/call-widget.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
     <div style="height: 0; width: 0" id="anon-stats"></div>
     <script type="text/javascript">
