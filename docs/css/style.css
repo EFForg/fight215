@@ -177,13 +177,13 @@ body {
  * bg styles
  */
 .blue-bg {
-  background: url("../images/circuit-pattern-blue.png") repeat #007eff; }
+  background: #007eff; }
 
 .black-bg {
-  background: url("../images/circuit-pattern-black.png") repeat #000; }
+  background: url("../images/circuit-pattern-black.png") repeat black; }
 
 .white-bg {
-  background: url("../images/circuit-pattern-sm3.png") repeat #fff; }
+  background: url("../images/circuit-pattern-sm3.png") repeat white; }
 
 /*
  * Header
@@ -205,6 +205,7 @@ body {
   0% {
     opacity: 0;
     transform: translate3d(0, 30%, 0); }
+
   100% {
     opacity: 1;
     transform: none; } }
@@ -317,7 +318,7 @@ body {
   position: relative; }
   .background-section::before {
     content: "";
-    background: url("../images/circuit-pattern-sm3.png") repeat #fff;
+    background: url("../images/circuit-pattern-sm3.png") repeat white;
     opacity: 0.15;
     top: 0;
     left: 0;
@@ -425,5 +426,3 @@ body {
 @media (min-width: 1200px) {
   .jumbotron .container h2 {
     padding: 0; } }
-
-/*# sourceMappingURL=style.css.map */
