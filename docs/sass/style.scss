@@ -438,8 +438,9 @@ body {
       margin-top: 60px;
     }
     a {
+      float: right;
       @include breakpoint($medium) {
-        padding-left: 5em;
+        padding-right: 0em;
       }
       text-transform: uppercase;
       font-weight: 400;

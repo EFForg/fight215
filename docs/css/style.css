@@ -406,11 +406,12 @@ body {
     .quote-section div div div:first-of-type {
       margin-top: 60px; }
     .quote-section div div div a {
+      float: right;
       text-transform: uppercase;
       font-weight: 400; }
       @media (min-width: 768px) {
         .quote-section div div div a {
-          padding-left: 5em; } }
+          padding-right: 0em; } }
   .quote-section p {
     font-size: 18px;
     font-weight: 300; }
