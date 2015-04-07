@@ -14,7 +14,9 @@ $(function(){
 
     // Auto-resize the video player to proper aspect ratio.
     function setAspectRatio() {
-      $('#video-container iframe').css('height', $(this).width() * 9/16);
+      $('#video-container iframe').each(function() {
+        $(this).css('height', $(this).width() * 9/16);
+      });
     }
     setAspectRatio();
     $(window).resize(setAspectRatio);
