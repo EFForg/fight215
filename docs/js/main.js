@@ -10,6 +10,7 @@ $(function(){
 
     $('#video-container').click(function(){
       $('#video-container').html('<iframe width="750" height="422" src="//www.youtube-nocookie.com/embed/pF7d8Dmxy8A?rel=0&vq=hd1080&autoplay=1" frameborder="0" allowfullscreen></iframe>');
+      setAspectRatio();
     });
 
     // Auto-resize the video player to proper aspect ratio.
@@ -18,7 +19,6 @@ $(function(){
         $(this).css('height', $(this).width() * 9/16);
       });
     }
-    setAspectRatio();
     $(window).resize(setAspectRatio);
 
     /* ================================
