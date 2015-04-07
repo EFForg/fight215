@@ -64,6 +64,8 @@ body {
   //text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
+
+
 /*
  * Navbar
  */
@@ -130,7 +132,8 @@ body {
  */
  .jumbotron img {
   width: 100%;
-  max-width: 800px;
+  //max-width: 800px;
+  max-width: 1200px;
   margin-top: 0px;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -152,19 +155,29 @@ body {
    }
  }
  .jumbotron {
+  background: url('../images/circuit-pattern-sm2.png') repeat #000;
   margin-bottom:0;
   a {
     text-decoration: underline;
   }
 
   @include breakpoint($medium) {
+    padding-top: 80px;
     height: 400px;
   }
 
   h2 {
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 0.01em;
+    font-style: normal;
+    font-size: 1.9em;
+    @include breakpoint($medium) {
+      font-size: 2.65em;
+    }
+    
   }
+
+  
 
 
   .cta {
@@ -215,6 +228,7 @@ body {
  */
 
 .calltool-section  {
+  background: url('../images/circuit-pattern-sm2.png') repeat #000;
   padding: 60px 0 80px 0;
 
   h1, h2 {
@@ -266,14 +280,17 @@ body {
   text-align:center;
   padding-left: 10px;
   h5 {
-    //text-transform: uppercase;
-    font-size: 18px;
+    text-transform: uppercase;
+    font-size: 14px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-top: 2.5em;
     font-family: 'Lato';
-    font-weight: 300;
+    font-weight: 600;
     font-style: normal;
+    text-align: left;
+    margin-left: 1em;
+    letter-spacing: 0.12em;
   }
   label {
     font-size: 16px;
@@ -301,19 +318,19 @@ body {
     margin: 0 auto;
     font-family: 'Lato';
     font-weight: 300;
-    font-size: 24px;
-    background: transparent;
+    font-size: 22px;
+    background: rgba(255,255,255,0.25);
     color: #fff;
     outline: 0;
     border: 0;
     -webkit-appearance: none;
     border-radius: 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 4px solid #fff;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    padding-left: 2.2em;
-    width: 80%;
+    text-align: left;
+    width: 84%;
     //text-align: center;
     &:focus {
       outline: 0;
@@ -409,9 +426,10 @@ body {
     text-align: left;
   }
   h2 {
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 1.6em;
+    margin-top: 1.4em;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: left;
   }
 }
 
@@ -429,7 +447,7 @@ body {
 // QUOTES
 
 .quote-section {
-
+  background: url('../images/circuit-pattern-sm2.png') repeat #000;
   text-shadow: none;
   padding-bottom: 40px;
   div div div { // quotes
@@ -444,12 +462,15 @@ body {
       }
       text-transform: uppercase;
       font-weight: 400;
+      letter-spacing: 0.15em;
+      font-size: 0.8em;
     }
   }
 
   p {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
+    line-height: 27px;
   }
 
 }
