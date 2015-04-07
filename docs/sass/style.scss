@@ -453,6 +453,10 @@ body {
   background: url('../images/circuit-pattern-sm2.png') repeat #000;
   text-shadow: none;
   padding-bottom: 40px;
+  h1 {
+    margin-top:50px; 
+    margin-bottom: 0;
+  }
   div div div { // quotes
     margin-bottom: 3em;
     &:first-of-type {
