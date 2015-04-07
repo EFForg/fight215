@@ -279,6 +279,7 @@ body {
 #tf-call-widget-form {
   text-align:center;
   padding-left: 10px;
+  padding-top: 10px;
   h5 {
     text-transform: uppercase;
     font-size: 14px;
@@ -441,7 +442,9 @@ body {
 //     opacity: 0.5 !important;
 //   }
 // }
-  
+
+
+
 
 
 // QUOTES
@@ -458,7 +461,7 @@ body {
     a {
       float: right;
       @include breakpoint($medium) {
-        padding-right: 0em;
+        padding-right: 4em;
       }
       text-transform: uppercase;
       font-weight: 400;
@@ -476,6 +479,14 @@ body {
 }
 
 
+// twitter section
+
+.tweet-section {
+  background-color: $white;
+  color: $black;
+  height: 300px;
+  padding-top: 80px;
+}
 
 
 /*

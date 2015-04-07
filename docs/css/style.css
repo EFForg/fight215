@@ -71,7 +71,7 @@
   border-color: #111 transparent;
   border-color: #fff transparent;
   border-width: .4em .4em 0 .4em;
-  top: -4px;
+  top: -9px;
   content: "";
   display: block;
   left: 22px;
@@ -319,7 +319,8 @@ body {
 
 #tf-call-widget-form {
   text-align: center;
-  padding-left: 10px; }
+  padding-left: 10px;
+  padding-top: 10px; }
   #tf-call-widget-form h5 {
     text-transform: uppercase;
     font-size: 14px;
@@ -427,11 +428,17 @@ body {
       font-size: 0.8em; }
       @media (min-width: 768px) {
         .quote-section div div div a {
-          padding-right: 0em; } }
+          padding-right: 4em; } }
   .quote-section p {
     font-size: 22px;
     font-weight: 300;
     line-height: 27px; }
+
+.tweet-section {
+  background-color: #fcfcfc;
+  color: #151515;
+  height: 300px;
+  padding-top: 80px; }
 
 /*
  * Footer
