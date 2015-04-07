@@ -2,7 +2,7 @@ $black: #151515;
 $blue: #007eff;
 $white: #fcfcfc;
 
-$trans-blue: rgba(0,126,255,0.3);
+$trans-blue: rgba(0,126,255,0.6);
 $footer-color: #001830;
 
 $medium: 768px;
@@ -185,6 +185,33 @@ body {
   }
 }
 
+// white tile
+
+%white-tile {
+  &::before {
+  content: "";
+  //background: url('../images/circuit-pattern-black.png') repeat #000;
+  background: url('../images/circuit-pattern-sm3.png') repeat #fff;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;   
+}
+&::after {
+  content: "";
+  background: #fff;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;   
+}
+}
 
 /*
  * Header
@@ -424,32 +451,10 @@ body {
 .background-section {
   padding-top: 30px;
   padding-bottom:50px;
-  background: $white;
+  background: #fff;
   position: relative;
-  //background: #fff;
-  // &::before {
-  //   content: "";
-  //   //background: url('../images/circuit-pattern-black.png') repeat #000;
-  //   background: url('../images/circuit-pattern-sm3.png') repeat #fff;
-  //   opacity: 0.15;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   position: absolute;
-  //   z-index: -1;   
-  // }
-  // &::after {
-  //   content: "";
-  //   background: #fff;
-  //   opacity: 1;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   position: absolute;
-  //   z-index: -2;   
-  // }
+  @extend %white-tile;
+
   // p:first-of-type {
   //   font-size: 22px;
   //   line-height: 27px;
@@ -547,7 +552,10 @@ body {
 // twitter section
 
 .tweet-section {
-  background-color: $white;
+  background: #fff;
+  position: relative;
+  //background: url('../images/circuit-pattern-sm3.png') repeat #fff;
+  @extend %white-tile;
   //height: 400px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -571,6 +579,9 @@ body {
     letter-spacing: 0.08em;
   }
   .tweet-block {
+    &:hover {
+      background-color: $trans-blue;
+    }
     background-color: #007eff;
     // &:hover {
     //   background: $trans-blue;
@@ -626,6 +637,9 @@ body {
     width: 8em;
     height: auto;
     padding: 1em;
+    &:first-of-type {
+      width: 20em;
+    }
   }
 }
 

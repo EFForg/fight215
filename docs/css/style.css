@@ -252,6 +252,27 @@ body {
     background-color: white;
     color: #151515; }
 
+.background-section::before, .tweet-section::before {
+  content: "";
+  background: url("../images/circuit-pattern-sm3.png") repeat #fff;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0; }
+.background-section::after, .tweet-section::after {
+  content: "";
+  background: #fff;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2; }
+
 /*
  * Header
  */
@@ -435,7 +456,7 @@ body {
 .background-section {
   padding-top: 30px;
   padding-bottom: 50px;
-  background: #fcfcfc;
+  background: #fff;
   position: relative; }
   .background-section p {
     color: #000;
@@ -490,7 +511,8 @@ body {
     line-height: 27px; }
 
 .tweet-section {
-  background-color: #fcfcfc;
+  background: #fff;
+  position: relative;
   padding-top: 60px;
   padding-bottom: 40px;
   color: #151515; }
@@ -514,6 +536,8 @@ body {
     border-radius: 5px;
     height: 8em;
     margin-bottom: 1em; }
+    .tweet-section .tweet-block:hover {
+      background-color: rgba(0, 126, 255, 0.6); }
     .tweet-section .tweet-block div {
       padding-top: 1em; }
       @media (min-width: 768px) {
@@ -545,6 +569,8 @@ body {
     width: 8em;
     height: auto;
     padding: 1em; }
+    .logo-section img:first-of-type {
+      width: 20em; }
 
 /*
  * Footer
