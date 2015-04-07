@@ -230,10 +230,10 @@ body {
   background: #007eff; }
 
 .black-bg {
-  background: url("../images/circuit-pattern-black.png") repeat #000; }
+  background: url("../images/circuit-pattern-black.png") repeat black; }
 
 .white-bg {
-  background: url("../images/circuit-pattern-sm3.png") repeat #fff; }
+  background: url("../images/circuit-pattern-sm3.png") repeat white; }
 
 .jumbotron .cta, .calltool-section .connect {
   text-decoration: none;
@@ -272,11 +272,12 @@ body {
   0% {
     opacity: 0;
     transform: translate3d(0, 30%, 0); }
+
   100% {
     opacity: 1;
     transform: none; } }
 .jumbotron {
-  background: url("../images/circuit-pattern-sm2.png") repeat #000;
+  background: url("../images/circuit-pattern-sm2.png") repeat black;
   margin-bottom: 0; }
   .jumbotron a {
     text-decoration: underline; }
@@ -330,7 +331,7 @@ body {
  * Call section
  */
 .calltool-section {
-  background: url("../images/circuit-pattern-sm2.png") repeat #000;
+  background: url("../images/circuit-pattern-sm2.png") repeat black;
   padding: 60px 0 80px 0; }
   .calltool-section h1, .calltool-section h2 {
     padding: 0;
@@ -463,9 +464,12 @@ body {
     text-align: left; }
 
 .quote-section {
-  background: url("../images/circuit-pattern-sm2.png") repeat #000;
+  background: url("../images/circuit-pattern-sm2.png") repeat black;
   text-shadow: none;
   padding-bottom: 40px; }
+  .quote-section h1 {
+    margin-top: 50px;
+    margin-bottom: 0; }
   .quote-section div div div {
     margin-bottom: 3em; }
     .quote-section div div div:first-of-type {
@@ -547,5 +551,3 @@ body {
 @media (min-width: 1200px) {
   .jumbotron .container h2 {
     padding: 0; } }
-
-/*# sourceMappingURL=style.css.map */
