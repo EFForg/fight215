@@ -439,6 +439,9 @@ body {
   color: #151515;
   height: 300px;
   padding-top: 80px; }
+  .tweet-section h1 {
+    font-size: 2em;
+    text-transform: uppercase; }
 
 /*
  * Footer
