@@ -538,6 +538,14 @@ body {
           font-size: 1.2em;
           padding-top: 1.1em; } }
 
+.logo-section {
+  padding: 80px 20px;
+  background-color: #000; }
+  .logo-section img {
+    width: 8em;
+    height: auto;
+    padding: 1em; }
+
 /*
  * Footer
  */
