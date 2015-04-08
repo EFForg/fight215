@@ -128,4 +128,11 @@ $(function(){
       }, 600);
     });
 
+    // Hide navbar on click.
+    $('.nav a').on('click', function(){
+      if ($('.navbar-toggle').css('display') != 'none') {
+        $('.navbar-toggle').click();
+      }
+    });
+
 });
