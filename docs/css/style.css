@@ -569,7 +569,7 @@ body {
           width: 5em; } }
     .tweet-section .tweet-block p {
       color: #fff;
-      padding-left: 1em;
+      padding-left: 0em;
       font-size: 0.9em;
       padding-top: 0.8em;
       text-align: left; }
