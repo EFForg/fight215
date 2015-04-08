@@ -66,4 +66,43 @@ $(function(){
     $('#tf-phone-number').focus();
     $('#tf-phone-number').mask('(000) 000-0000');
 
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+      while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+    };
+
+    var tweets = [
+      "Please stop spying on innocent people everywhere under the Patriot Act.",
+      "Please end untargeted surveillance under the Patriot Act.",
+      "It's time to end the NSA's untargeted mass surveillance under the Patriot Act."
+    ];
+
+    var targets = [
+      '@NancyPelosi ',
+      '@SenateMajLdr ',
+      '@SenatorReid ',
+      '@SpeakerBoehner ',
+    ];
+
+    shuffle(tweets);
+    for (var i=0; i < tweets.length; i++) {
+      shuffle(targets);
+      tweets[i] = 'Dear ' + targets[0] + targets[1] + tweets[i];
+      $('#tweets a:eq(' + i.toString() + ')').attr('href', 'https://twitter.com/share?text=' + encodeURIComponent(tweets[i]) + '&url=https%3A%2F%2Ffight215.org');
+      $('#tweets p:eq(' + i.toString() + ')').text(tweets[i]);
+    }
+
+    $('#tweets a').click(function() {
+      var url = $(this).attr('href');
+      window.open(url, 'Twitter', 'width=550,height=420');
+      return false;
+    });
+
+
 });
