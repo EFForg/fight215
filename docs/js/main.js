@@ -63,7 +63,7 @@ $(function(){
         window.location.href='#call';
         return false;
     });
-    $('#tf-phone-number').focus();
+    // $('#tf-phone-number').focus();
     $('#tf-phone-number').mask('(000) 000-0000');
 
 });
