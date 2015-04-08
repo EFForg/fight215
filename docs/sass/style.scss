@@ -143,6 +143,7 @@ body {
 .navbar-inverse .navbar-brand {
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a {
   color: $blue;
@@ -180,6 +181,7 @@ body {
   margin-top: 2em;
   background-color: transparent;
   outline: 0;
+  width: 84%;
   &:hover {
     background-color: rgba(255,255,255,1);
     color: $black;
@@ -377,11 +379,14 @@ body {
     margin-bottom: 20px;
     margin-top: 2.5em;
     font-family: 'Lato';
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     text-align: left;
-    margin-left: 1em;
+    margin-left: 8%;
     letter-spacing: 0.12em;
+    line-height: 18px;
+    width: 84%;
+    //margin-right: -2%;
   }
   label {
     font-size: 16px;
