@@ -104,5 +104,28 @@ $(function(){
       return false;
     });
 
+    $('a[href="#tweet"]').click(function () {
+      $('html, body').animate({
+        scrollTop: $("#tweet").offset().top - 30
+      }, 600);
+    });
+
+    $('a[href="#call"]').click(function () {
+      $('html, body').animate({
+        scrollTop: $("#call").offset().top - 20
+      }, 600);
+    });
+
+    $('a[href="#background"]').click(function () {
+      $('html, body').animate({
+        scrollTop: $("#background").offset().top - 20
+      }, 600);
+    });
+
+    $('a[href="#"]').click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 600);
+    });
 
 });
