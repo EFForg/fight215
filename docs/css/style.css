@@ -402,8 +402,10 @@ body {
 
 #tf-call-widget-form {
   text-align: center;
-  padding-left: 10px;
   padding-top: 10px; }
+  @media (min-width: 768px) {
+    #tf-call-widget-form {
+      padding-left: 10px; } }
   #tf-call-widget-form h5 {
     text-transform: uppercase;
     font-size: 14px;

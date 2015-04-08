@@ -382,7 +382,10 @@ body {
 }
 #tf-call-widget-form {
   text-align:center;
-  padding-left: 10px;
+  //padding-left: 10px;
+  @include breakpoint($medium) {
+    padding-left: 10px;
+  }
   padding-top: 10px;
   h5 {
     text-transform: uppercase;
