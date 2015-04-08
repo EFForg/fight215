@@ -137,6 +137,7 @@ body {
   display: none;
 }
 .nav>li>a {
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 .navbar-inverse .navbar-brand {
@@ -653,6 +654,7 @@ body {
   text-align: left;
   text-transform: uppercase;
   font-size: 0.8em;
+  letter-spacing: 0.08em;
 
   img {
 

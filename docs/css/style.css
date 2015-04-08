@@ -212,6 +212,7 @@ body {
   display: none; }
 
 .nav > li > a {
+  letter-spacing: 0.1em;
   text-transform: uppercase; }
 
 .navbar-inverse .navbar-brand {
@@ -580,7 +581,8 @@ body {
   padding: 20px 0;
   text-align: left;
   text-transform: uppercase;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  letter-spacing: 0.08em; }
   .footer img {
     margin: 0 2em; }
     @media (min-width: 768px) {
