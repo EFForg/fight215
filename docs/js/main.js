@@ -9,7 +9,7 @@ $(function(){
 
 
     $('#video-container').click(function(){
-      $('#video-container').html('<iframe width="750" height="422" src="https://www.youtube-nocookie.com/embed/pF7d8Dmxy8A?rel=0&vq=hd1080&autoplay=1" frameborder="0" allowfullscreen></iframe>');
+      $('#video-container').html('<iframe width="750" height="422" src="https://www.youtube-nocookie.com/embed/5UsoZmMD5_A?rel=0&amp;vq=hd1080&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
       setAspectRatio();
     });
 
