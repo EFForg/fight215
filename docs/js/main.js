@@ -122,12 +122,6 @@ $(function(){
       }, 600);
     });
 
-    $('a[href="#"]').click(function () {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 600);
-    });
-
     // Hide navbar on click.
     $('.nav a').on('click', function(){
       if ($('.navbar-toggle').css('display') != 'none') {
