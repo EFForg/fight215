@@ -279,6 +279,18 @@ body {
  /*
   * Video section
   */
+
+
+  .mobile-social {
+    list-style-type: none;
+    li {
+      display: inline;
+      padding-right: 2em;
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
 .video-section {
   padding: 30px 0;
   p {
@@ -618,7 +630,7 @@ body {
       height: auto;
       @include breakpoint($medium) {
         padding-top: 1em;
-        width: 4em;
+        width: 5em;
 
       }
     }
