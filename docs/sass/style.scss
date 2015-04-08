@@ -662,7 +662,10 @@ body {
     height: auto;
     padding: 1em;
     &:first-of-type {
-      width: 200px;
+      width: 300px;
+      @include breakpoint($medium) {
+        width: 400px;
+      }
     }
   }
 }
