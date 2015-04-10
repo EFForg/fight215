@@ -307,7 +307,9 @@ body {
   iframe {
     max-width: 100%;
     margin: 30px 0 30px;
+    border: 10px solid $trans-blue;
   }
+
 }
 #video-container img {
   margin-top: 30px;
