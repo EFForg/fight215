@@ -287,8 +287,12 @@ body {
     li {
       display: inline;
       padding-right: 2em;
+      img {
+        width: 4em;
+        height: auto;
+      }
       &:last-of-type {
-        padding-right: 0;
+        //padding-right: 0;
       }
     }
   }
