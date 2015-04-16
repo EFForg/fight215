@@ -16,7 +16,7 @@ $(function(){
     // Auto-resize the video player to proper aspect ratio.
     function setAspectRatio() {
       $('#video-container iframe').each(function() {
-        $(this).css('height', $(this).width() * 9/16);
+        $(this).innerHeight($(this).innerWidth() * 9/16);
       });
     }
     $(window).resize(setAspectRatio);
@@ -25,7 +25,7 @@ $(function(){
        Social counts
     ================================= */
 
-    var shareUrl = window.location.href;
+    var shareUrl = 'https://fight215.org/'; // window.location.href;
     // If the share buttons widget is visible, lets load some values
     if($('#share-buttons').length > 0) {
         function updateCount() {

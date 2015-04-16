@@ -16,12 +16,12 @@ $small: max-width 767px;
  */
 
 /* Lato */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Lato Hairline'), local('Lato-Hairline'), url(../fonts/Lato-Hairline.woff) format('woff');
-}
+// @font-face {
+//   font-family: 'Lato';
+//   font-style: normal;
+//   font-weight: 100;
+//   src: local('Lato Hairline'), local('Lato-Hairline'), url(../fonts/Lato-Hairline.woff) format('woff');
+// }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -40,56 +40,57 @@ $small: max-width 767px;
   font-weight: 700;
   src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/Lato-Bold.woff) format('woff');
 }
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(../fonts/Lato-Black.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 100;
-  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(../fonts/Lato-HairlineItalic.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(../fonts/Lato-LightItalic.woff) format('woff');
-}
+// }
+// @font-face {
+//   font-family: 'Lato';
+//   font-style: normal;
+//   font-weight: 900;
+//   src: local('Lato Black'), local('Lato-Black'), url(../fonts/Lato-Black.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Lato';
+//   font-style: italic;
+//   font-weight: 100;
+//   src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(../fonts/Lato-HairlineItalic.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Lato';
+//   font-style: italic;
+//   font-weight: 300;
+//   src: local('Lato Light Italic'), local('Lato-LightItalic'), url(../fonts/Lato-LightItalic.woff) format('woff');
+// }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
   src: local('Lato Italic'), local('Lato-Italic'), url(../fonts/Lato-Italic.woff) format('woff');
 }
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(../fonts/Lato-BoldItalic.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 900;
-  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(../fonts/Lato-BlackItalic.woff) format('woff');
-}
+// @font-face {
+//   font-family: 'Lato';
+//   font-style: italic;
+//   font-weight: 700;
+//   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(../fonts/Lato-BoldItalic.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Lato';
+//   font-style: italic;
+//   font-weight: 900;
+//   src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(../fonts/Lato-BlackItalic.woff) format('woff');
+// }
 
-/* Montserrat */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.woff) format('woff');
-}
+// /* Montserrat */
+// @font-face {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.woff) format('woff');
+// }
 
 /* Links */
 a,
@@ -175,7 +176,7 @@ body {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   border: 1px solid #fff;
-  padding: 1em 4em 0.9em 4em;
+  padding: 1em 0em 0.9em 0em;
   font-size: 1.2em;
   border-radius: 4px;
   margin-top: 2em;
@@ -285,9 +286,13 @@ body {
     list-style-type: none;
     li {
       display: inline;
-      padding-right: 2em;
+      margin-right: 2em;
+      img {
+        width: 3.5em;
+        height: auto;
+      }
       &:last-of-type {
-        padding-right: 0;
+        //margin-right: 0;
       }
     }
   }
@@ -305,14 +310,17 @@ body {
   //box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
   iframe {
     max-width: 100%;
-    margin: 30px 0 30px;
+    margin: 30px 0 51px;
+    border: 10px solid $trans-blue;
   }
+
 }
 #video-container img {
   margin-top: 30px;
   margin-bottom:5px;
   cursor: pointer; cursor: hand;
   width: 100%;
+  border: 10px solid $trans-blue;
 }
 #video-privacy {
   margin-bottom:30px;
@@ -424,6 +432,8 @@ body {
     }
 
   }
+
+
 
   .input-lg {
     margin: 0 auto;
@@ -639,7 +649,7 @@ body {
     }
     p {
       color: #fff;
-      padding-left: 1em;
+      padding-left: 0em;
       font-size: 0.9em;
       padding-top: 0.8em;
       @include breakpoint($medium) {
@@ -662,7 +672,10 @@ body {
     height: auto;
     padding: 1em;
     &:first-of-type {
-      width: 200px;
+      width: 300px;
+      @include breakpoint($medium) {
+        width: 400px;
+      }
     }
   }
 }
