@@ -1,0 +1,138 @@
+@import "../../bower_components/susy/sass/susy"
+
+
+// fonts
+@import "fonts.sass"
+
+// susy definitions
+
+$susy: 12 1/4 fluid float inside
++layout($susy)
+
+// breakpoints
+
+$xs: min-width 12em
+$sm: min-width 23em
+$md: min-width 34em
+$ml: min-width 48em
+$lg: min-width 66em
+$xl: min-width 80em
+
+// resets 
+
+div,p,a,li,td,span
+  -webkit-text-size-adjust: none
+
+// defaults
+
+body
+  font-size: 18px
+  font-family: 'Lato'
+  margin: 0
+  padding: 0
+
+// variables
+
+$header-height: 50px
+
+// code
+
+body // Move everything down to make room for banner
+  // &::before
+  //   content: ''
+  //   height: $header-height
+  //   display: block
+
+#fight215-iframe
+  border: 0
+  outline: 0
+  width: 100%
+  height: $header-height
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 20000
+
+#fight215-banner
+
+  &:hover
+    cursor: pointer
+
+  z-index: 10000
+  position: absolute
+  top: 0
+  left: 0
+  font-size: 0.45em
+  +susy-breakpoint($sm)
+    font-size: 0.5em
+
+  +susy-breakpoint($md)
+    font-size: 0.8em
+  +susy-breakpoint($lg)
+    font-size: 1em
+
+  // 3-col grid
+
+  div:nth-of-type(1) // img
+    +span(12)
+    text-align: center
+    img
+      height: auto
+      width: 40px
+      min-width:40px
+      margin-top: 2px
+    +susy-breakpoint($md)
+      +span(2)
+      img
+        width: 60px
+        min-width:60px
+        margin-top: 5px
+        +push(40%)
+    +susy-breakpoint($ml)
+      img
+        +push(90%)
+    +susy-breakpoint($lg)
+      img
+        +push(60%)
+
+  div:nth-of-type(2) // timer
+    +span(12)
+    text-align: center
+
+    +susy-breakpoint($md)
+      +span(8)
+      padding-top: 0.6em
+      p
+        max-width: 420px
+        margin: 0 auto
+    +susy-breakpoint($lg)
+      padding-top: 0
+      line-height: $header-height
+      p
+        max-width: 100%
+
+  div:nth-of-type(3) // cta
+    display: none
+    +span(12)
+    text-align: left
+    color: #fff
+    text-decoration: underline
+    line-height: 50px
+    +susy-breakpoint($md)
+      display: block
+      +span(2)
+      margin-top: 0
+
+
+  height: $header-height
+  width: 100%
+  //background: url(//fight215.org/images/circuit-pattern-sm2.png) repeat
+  color: #000
+  background: #007eff
+
+  p
+    margin: 0 1em 
+
+    span
+      color: #fff
+
