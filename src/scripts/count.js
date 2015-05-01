@@ -47,7 +47,7 @@
 	var iframe = document.createElement('iframe');
 	iframe.src = 'https://www.fight215.org/count/index.html';
 	iframe.width = '100%';
-	iframe.height = '50px';
+	iframe.height = '60px';
 	iframe.frameBorder = '0';
 
 	iframe.style.position = 'absolute';
@@ -57,7 +57,7 @@
 
 
 	var styleTag = document.createElement('style');
-	var styleText = document.createTextNode('body::before{content:\'\';height:50px;display:block}');
+	var styleText = document.createTextNode('body::before{content:\'\';height:60px;display:block}');
    	styleTag.type = 'text/css';
    	styleTag.appendChild(styleText);
    	document.head.appendChild(styleTag);

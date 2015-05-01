@@ -94,7 +94,14 @@
 	// banner.appendChild(content);
 	// document.body.appendChild(banner);
 
-	var content = document.getElementById('fight215-timer');
+	var box = {
+		days: document.getElementById('days'),
+		hours: document.getElementById('hours'),
+		minutes: document.getElementById('minutes'),
+		seconds: document.getElementById('seconds')
+	};
+
+
 	document.getElementById('fight215-banner').onclick = function() {
 		document.location = 'https://www.fight215.org/';
 	};
@@ -118,9 +125,12 @@
 	    hours = pad(hours);
 	    minutes = pad(minutes);
 	    remainingSeconds = pad(remainingSeconds);
-	    content.innerHTML = '<span>' +days+ '</span>' + ' days ' + '<span>' +hours+ '</span>' + ' hours ' + '<span>' +minutes+ '</span>' + ' minutes ' + '<span>' +remainingSeconds+ '</span>' + ' seconds to end mass surveillance under the Patriot Act';
+	    box.days.innerHTML = days;
+	    box.hours.innerHTML = hours;
+	    box.minutes.innerHTML = minutes;
+	    box.seconds.innerHTML = remainingSeconds;
 	    if (seconds === 0) {
-	        content.innerHTML = "Expired? Succeeded? I was too lazy to code a response!";
+	        document.getElementById('fight215-banner').innerHTML = "Expired? Succeeded? I was too lazy to code a response!";
 	    } else {
 	        seconds--;
 	    }
