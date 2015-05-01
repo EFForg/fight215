@@ -14,7 +14,7 @@ $susy: 12 1/4 fluid float inside
 $xs: min-width 12em
 $sm: min-width 23em
 $md: min-width 34em
-$ml: min-width 48em
+$ph: min-width 48em
 $lg: min-width 66em
 $xl: min-width 80em
 
@@ -64,34 +64,89 @@ body // Move everything down to make room for banner
   left: 0
   z-index: 20000
 
+
 #fight215-banner
 
-  position: relative
+  div:nth-of-type(1)
+    +span(2)
+    +susy-breakpoint($md)
+      +span(3)
+    +susy-breakpoint($lg)
+      +span(4)
+  div:nth-of-type(2)
+    +span(10)
+    +susy-breakpoint($md)
+      +span(6)
+    +susy-breakpoint($lg)
+      +span(4)
+  div:nth-of-type(3)
+    display: none
+    +susy-breakpoint($md)
+      +span(3)
+      display: block
+    +susy-breakpoint($lg)
+      +span(4)
 
-  ul
-    margin: 0px
-    padding: 0
-    list-style-type: none
-    
-    li
-      display: inline
-      margin-right: 1em
+
+  text-align: center 
+
+  div:nth-of-type(1)
+    text-align: right
+    img
+      width: 3em
+      height: auto
+      margin-top: 0.2em
+      margin-right: -1em
+
+
+
+
+  div:nth-of-type(2)
+    ul
+      text-align: center
+      margin: 0px
+      padding: 0
+      list-style-type: none
+      
+      li
+        display: inline
+        margin-right: 1em
+        color: #fff
+        &:nth-of-type(1)
+          +timer('days', -2.15em)
+        &:nth-of-type(2)
+          +timer('hours', -2.35em)
+        &:nth-of-type(3)
+          +timer('mins', -2.2em)
+        &:nth-of-type(4)
+          +timer('secs', -2.1em)
+
+      li:last-of-type
+        margin-right: 0
+
+    p
+      font-size: 0.5em
       color: #fff
-      &:nth-of-type(1)
-        +timer('days', -2.15em)
-      &:nth-of-type(2)
-        +timer('hours', -2.35em)
-      &:nth-of-type(3)
-        +timer('mins', -2.2em)
-      &:nth-of-type(4)
-        +timer('secs', -2.1em)
 
-    li:last-of-type
-      margin-right: 0
+  div:nth-of-type(3)
+    text-align: left
 
-  p
-    font-size: 0.5em
-    color: #fff
+    button
+      background: #fff
+      border: 0
+      outline: 0
+      border-radius: 12px
+      font-size: 0.6em
+      color: $blue
+      padding: 0.5em
+      text-transform: uppercase
+      font-weight: 700
+      letter-spacing: 0.05em
+      display: block
+      margin-top: 0.9em
+      margin-left: -1em
+
+
 
 
 
