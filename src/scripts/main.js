@@ -103,7 +103,8 @@
 
 
 	document.getElementById('fight215-banner').onclick = function() {
-		document.location = 'https://www.fight215.org/';
+		top.location.href = 'https://www.fight215.org/';
+
 	};
 
 	var now = new Date().getTime();
