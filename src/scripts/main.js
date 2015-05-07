@@ -131,7 +131,7 @@
 	    box.minutes.innerHTML = minutes;
 	    box.seconds.innerHTML = remainingSeconds;
 	    if (seconds === 0) {
-	        document.getElementById('fight215-banner').innerHTML = "Expired? Succeeded? I was too lazy to code a response!";
+	        document.getElementById('fight215-banner').innerHTML = "Did we win?";
 	    } else {
 	        seconds--;
 	    }

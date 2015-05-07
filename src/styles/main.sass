@@ -68,22 +68,26 @@ body // Move everything down to make room for banner
 #fight215-banner
 
   div:nth-of-type(1)
-    +span(2)
+    display: none
     +susy-breakpoint($md)
       +span(3)
+      display: block
     +susy-breakpoint($lg)
       +span(4)
   div:nth-of-type(2)
-    +span(10)
+    +span(8)
     +susy-breakpoint($md)
       +span(6)
     +susy-breakpoint($lg)
       +span(4)
   div:nth-of-type(3)
-    display: none
+    font-size: 0.75em
+    margin-top: 0.4em
+    +span(4)
     +susy-breakpoint($md)
+      margin: 0
+      font-size: 1em
       +span(3)
-      display: block
     +susy-breakpoint($lg)
       +span(4)
 
@@ -144,7 +148,9 @@ body // Move everything down to make room for banner
       letter-spacing: 0.05em
       display: block
       margin-top: 0.9em
-      margin-left: -1em
+      margin-left: 0.5em
+      +susy-breakpoint($md)
+        margin-left: -1em
 
       &:hover
         cursor: pointer
