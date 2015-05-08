@@ -146,10 +146,9 @@
 	timer();
 	setInterval(timer, 1000);
 
-	setTimeout(function() {
+	document.addEventListener("DOMContentLoaded", function(event) { 
 		document.getElementById('fight215-banner').classList.add('active');
-	},500);
-	
+	});
 
 
 
