@@ -135,6 +135,7 @@
 	    } else {
 	        seconds--;
 	    }
+
 	}
 
 	function pad(number) {
@@ -144,5 +145,12 @@
 
 	timer();
 	setInterval(timer, 1000);
+
+	setTimeout(function() {
+		document.getElementById('fight215-banner').classList.add('active');
+	},500);
+	
+
+
 
 })();

@@ -49,6 +49,7 @@
 	iframe.width = '100%';
 	iframe.height = '60px';
 	iframe.frameBorder = '0';
+	iframe.setAttribute('allowTransparency', 'true');
 
 	iframe.style.position = 'absolute';
 	iframe.style.top = '0px';

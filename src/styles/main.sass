@@ -63,9 +63,11 @@ body // Move everything down to make room for banner
   top: 0
   left: 0
   z-index: 20000
+  background-color: transparent
 
 
 #fight215-banner
+
 
   div:nth-of-type(1)
     display: none
@@ -163,7 +165,6 @@ body // Move everything down to make room for banner
   position: absolute
   top: 0
   left: 0
-
   height: $header-height
   width: 100%
   //background: url(//fight215.org/images/circuit-pattern-sm2.png) repeat
@@ -175,6 +176,12 @@ body // Move everything down to make room for banner
 
   font-size: 2em
 
-
+  transform: translate3d(0,-60px,0)
+  transition: all 0s linear
   &:hover
     cursor: pointer
+
+  
+  &.active
+    transform: translate3d(0,0,0)
+    transition: all 0.2s linear
