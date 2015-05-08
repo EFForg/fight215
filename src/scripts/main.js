@@ -146,9 +146,9 @@
 	timer();
 	setInterval(timer, 1000);
 
-	
-	document.getElementById('fight215-banner').classList.add('active');
-	
+	setTimeout(function() {
+		document.getElementById('fight215-banner').classList.add('active');
+	},500);
 	
 
 
