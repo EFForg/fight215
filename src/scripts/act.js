@@ -34,13 +34,37 @@
 	// fontStyle.href = 'https://www.fight215.org/count/styles/fonts.min.css';
 	// document.head.appendChild(fontStyle);
 
-	// var iframe = document.createElement('iframe');
-	// iframe.src = 'https://www.fight215.org/count/index.html';
-	// iframe.width = '100%';
-	// iframe.height = '50px';
-	// iframe.frameBorder = '0';
+	document.body.style.marginTop = 0;
+	document.body.style.marginRight = 0;
+	document.body.style.marginBottom = 0;
+	document.body.style.marginLeft = 0;
 
-	// document.body.appendChild(iframe);
+	document.body.style.paddingTop = 0;
+	document.body.style.paddingRight = 0;
+	document.body.style.paddingBottom = 0;
+	document.body.style.paddingLeft = 0;
+
+	var iframe = document.createElement('iframe');
+	iframe.src = 'https://www.fight215.org/count/act.html';
+	iframe.width = '100%';
+	iframe.height = '60px';
+	iframe.frameBorder = '0';
+	iframe.setAttribute('allowTransparency', 'true');
+	iframe.setAttribute('scrolling', 'no');
+
+	iframe.style.position = 'absolute';
+	iframe.style.top = '0px';
+	iframe.style.left = '0px';
+	iframe.style.zIndex = '20000';
+
+
+	var styleTag = document.createElement('style');
+	var styleText = document.createTextNode('body::before{content:\'\';height:60px;display:block}');
+   	styleTag.type = 'text/css';
+   	styleTag.appendChild(styleText);
+   	document.head.appendChild(styleTag);
+
+	document.body.insertBefore(iframe, document.body.firstChild);
 
 	// var banner = document.createElement('div');
 	// banner.id = 'fight215-banner';
@@ -94,62 +118,45 @@
 	// banner.appendChild(content);
 	// document.body.appendChild(banner);
 
-	var box = {
-		days: document.getElementById('days'),
-		hours: document.getElementById('hours'),
-		minutes: document.getElementById('minutes'),
-		seconds: document.getElementById('seconds')
-	};
+	// var content = document.getElementById('fight215-timer');
+	// document.getElementById('fight215-banner').onclick = function() {
+	// 	document.location = 'https://www.fight215.org/';
+	// };
+
+	// var now = new Date().getTime();
+	// var then = new Date("Mon Jun 1 2015 00:00:00 GMT-0400 (EDT)").getTime();
+	// var distance = (then - now) / 1000;
+
+	// var seconds = distance;
 
 
-	document.getElementById('fight215-banner').onclick = function() {
-		top.location.href = 'https://act.eff.org/action/not-one-more-day-of-nsa-mass-spying-on-our-phone-records';
+	// function timer() {
+	//     var days        = Math.floor(seconds/24/60/60),
+	//         hoursLeft   = Math.floor((seconds) - (days*86400)),
+	//     	hours       = Math.floor(hoursLeft/3600),
+	//     	minutesLeft = Math.floor((hoursLeft) - (hours*3600)),
+	//     	minutes     = Math.floor(minutesLeft/60),
+	//     	remainingSeconds = Math.floor(seconds % 60);
 
-	};
-
-	var now = new Date().getTime();
-	var then = new Date("Mon Jun 1 2015 00:00:00 GMT-0400 (EDT)").getTime();
-	var distance = (then - now) / 1000;
-
-	var seconds = distance;
-
-
-	function timer() {
-	    var days        = Math.floor(seconds/24/60/60),
-	        hoursLeft   = Math.floor((seconds) - (days*86400)),
-	    	hours       = Math.floor(hoursLeft/3600),
-	    	minutesLeft = Math.floor((hoursLeft) - (hours*3600)),
-	    	minutes     = Math.floor(minutesLeft/60),
-	    	remainingSeconds = Math.floor(seconds % 60);
-
-	    days = pad(days);
-	    hours = pad(hours);
-	    minutes = pad(minutes);
-	    remainingSeconds = pad(remainingSeconds);
-	    box.days.innerHTML = days;
-	    box.hours.innerHTML = hours;
-	    box.minutes.innerHTML = minutes;
-	    box.seconds.innerHTML = remainingSeconds;
-	    if (seconds === 0) {
-	        document.getElementById('fight215-banner').innerHTML = "Did we win?";
-	    } else {
-	        seconds--;
-	    }
-
-	}
-
-	function pad(number) {
-	  if (number<10) { number = "0" + number; }
-	  return number;
-	}
-
-	timer();
-	setInterval(timer, 1000);
-
-	document.addEventListener("DOMContentLoaded", function(event) { 
-		document.getElementById('fight215-banner').classList.add('active');
-	});
+	//     days = pad(days);
+	//     hours = pad(hours);
+	//     minutes = pad(minutes);
+	//     remainingSeconds = pad(remainingSeconds);
+	//     content.innerHTML = '<span>' +days+ '</span>' + ' days ' + '<span>' +hours+ '</span>' + ' hours ' + '<span>' +minutes+ '</span>' + ' minutes ' + '<span>' +remainingSeconds+ '</span>' + ' seconds to end mass surviellance under the Patriot Act';
+	//     if (seconds === 0) {
+	//         content.innerHTML = "Expired? Succeeded? I was too lazy to code a response!";
+	//     } else {
+	//         seconds--;
+	//     }
+	// }
 
 
+	// function pad(number) {
+	//   if (number<10) { number = "0" + number; }
+	//   return number;
+	// }
+
+	// timer();
+	// setInterval(timer, 1000);
 
 })();
