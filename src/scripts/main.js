@@ -108,10 +108,21 @@
 	};
 
 	var now = new Date().getTime();
-	var then = new Date("Mon Jun 1 2015 00:00:00 GMT-0400 (EDT)").getTime();
+	var then = new Date("Sun Jun 1 2015 00:00:00 GMT-0400 (EDT)").getTime();
 	var distance = (then - now) / 1000;
 
+	var direction = 'down';
+
+	if(distance <= 0) {
+		direction = 'up';
+		distance = (now - then) / 1000;
+		document.getElementsByTagName('p')[0].innerHTML = "since sec. 215 of the Patriot Act expired";
+	}
+
+
 	var seconds = distance;
+
+
 
 
 	function timer() {
@@ -122,19 +133,24 @@
 	    	minutes     = Math.floor(minutesLeft/60),
 	    	remainingSeconds = Math.floor(seconds % 60);
 
-	    days = pad(days);
+
+
+	    if (direction === 'down') {
+		    seconds--;
+		} else {
+			seconds++;
+		}
+
+    	days = pad(days);
 	    hours = pad(hours);
 	    minutes = pad(minutes);
 	    remainingSeconds = pad(remainingSeconds);
-	    box.days.innerHTML = days;
+	    
+		box.days.innerHTML = days;
 	    box.hours.innerHTML = hours;
 	    box.minutes.innerHTML = minutes;
 	    box.seconds.innerHTML = remainingSeconds;
-	    if (seconds === 0) {
-	        document.getElementById('fight215-banner').innerHTML = "Did we win?";
-	    } else {
-	        seconds--;
-	    }
+
 
 	}
 
