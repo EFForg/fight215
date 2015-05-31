@@ -116,7 +116,7 @@
 	if(distance <= 0) {
 		direction = 'up';
 		distance = (now - then) / 1000;
-		document.getElementsByTagName('p')[0].innerHTML = "since sec. 215 of the Patriot Act expired";
+		document.getElementsByTagName('p')[0].innerHTML = "Free from Section 215 of the Patriot Act";
 	}
 
 
